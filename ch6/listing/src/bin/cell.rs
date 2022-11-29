@@ -16,4 +16,12 @@ fn main() {
 
     my_struct.special_filed.set(new_value);
     assert_eq!(my_struct.special_filed.get(), new_value);
+
+    let c = Cell::new("abc");
+    let one = c.get();
+    c.set("def");
+    let two = c.get();
+    println!("{}, {}", one, two);
+
+    // let c = Cell::new(String::from("cell"));
 }

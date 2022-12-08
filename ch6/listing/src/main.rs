@@ -1,3 +1,5 @@
 fn main() {
-    println!("Hello, world!");
+    unsafe {
+        println!("a");
+    }
 }
